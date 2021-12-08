@@ -1,0 +1,70 @@
+.container1{
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    width: 50%;
+    /* min-height: fit-content; */
+    max-height: 100vh;
+    overflow: auto;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 0 20px;
+}
+
+.profit {
+    color:#79ea86;
+}
+
+.loss{
+    color:#e75757;
+}
+
+.card:hover{
+    background-color: #eee;
+}
+
+.AddBtn {
+    display: none;
+}
+
+.card:hover h4,
+.card:hover p {
+    filter: blur(0.5px);
+}
+
+.card:hover > .AddBtn,
+.AddBtn:hover {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    right: 25%;
+    width: 115px;
+    height: 115px;
+    /* border: 1px solid red; */
+}
+
+.AddBtn>button{
+    font-size: 14px;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+    margin-right: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #fff;
+    border-radius: 50px;
+}
